@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dé Noir Games - Estudio de videojuegos indie. Creamos experiencias de juego únicas y memorables.">
+    <meta name="keywords" content="videojuegos, indie, gaming, game development, Dé Noir Games">
+    <title>Dé Noir Games | Estudio de Videojuegos Indie</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="iconDicebLACK.svg" alt="Dé Noir Games Logo" class="nav-logo-img">
+                <span class="nav-logo-text">DÉ NOIR GAMES</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Nosotros</a></li>
+                <li><a href="#games" class="nav-link">Juegos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="grid-lines"></div>
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+            <div class="glow-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="logo-container reveal">
+                <div class="dice-animation">
+                    <img src="iconDicebLACK.svg" alt="Dé Noir - Dado Negro" class="hero-dice">
+                </div>
+            </div>
+            <h1 class="hero-title reveal">
+                <span class="typing-text"></span>
+                <span class="cursor-blink">|</span>
+            </h1>
+            <p class="hero-tagline reveal">Creando mundos con personalidad propia</p>
+            <div class="hero-cta reveal">
+                <a href="#games" class="btn btn-primary">
+                    <span>Explorar Juegos</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12l7 7 7-7" />
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-secondary">Conócenos</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">// SOBRE NOSOTROS</span>
+                <h2 class="section-title">El Arte de Crear <span class="gradient-text">Experiencias</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <p class="about-text">
+                        En <strong>Dé Noir Games</strong>, creemos que cada juego es una expresión de arte.
+                        Como una película o un libro, nuestras experiencias narran historias únicas a través de la
+                        creatividad con la precisión del diseño.
+                    </p>
+                    <p class="about-text">
+                        Somos un estudio indie apasionado por crear juegos únicos
+                        que desafían las convenciones. Nuestros juegos nacen de la
+                        experimentación, la narrativa profunda y el amor por el arte digital.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Proyectos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2025">0</span>
+                            <span class="stat-label">Fundado</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-label">% Pasión</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="visual-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="floating-dice">
+                                <img src="iconDicebLACK.svg" alt="Dado flotante" class="floating-dice-img">
+                            </div>
+                            <div class="card-lines">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">// NUESTROS JUEGOS</span>
+                <h2 class="section-title">Proyectos que <span class="gradient-text">Brillan</span></h2>
+            </div>
+            <div class="games-grid">
+                <!-- Game Card 1 -->
+                <a href="https://denoirgames.github.io/RiptideRunner/" class="game-card-link" target="_blank"
+                    rel="noopener noreferrer">
+                    <article class="game-card reveal">
+                        <div class="card-image">
+                            <!-- Reemplaza src con la ruta de tu imagen -->
+                            <img src="Copilot_20251211_110208.png"
+                                alt="Riptide Runner Cover" class="game-cover">
+                            <div class="img-overlay"></div>
+                            <span class="coming-soon">Ya disponible</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="game-genre">Endless Runner</span>
+                            <h3 class="game-title">Riptide Runner</h3>
+                            <p class="game-desc">Una serpiente trata de alcanzar su destino en un desierto sin piedad.
+                            </p>
+                            <div class="game-tags">
+                                <span class="tag">free</span>
+                                <span class="tag">Single Player</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Game Card 2 -->
+                <a href="https://denoirgames.github.io/NostagiousEarlyAcess/"
+                " class="game-card-link" target="_blank"
+                    rel="noopener noreferrer">
+                    <article class="game-card reveal">
+                        <div class="card-image">
+                            <!-- Reemplaza src con la ruta de tu imagen -->
+                            <img src="11zon_NOSTAGIOUS_1.jpg" alt="Nostagious Cover"
+                                class="game-cover">
+                            <div class="img-overlay"></div>
+                            <span class="coming-soon">Early Access</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="game-genre">Roguelike Platformer</span>
+                            <h3 class="game-title">Nostagious</h3>
+                            <p class="game-desc">La nostalgia de ser niño es contagiosa.</p>
+                            <div class="game-tags">
+                                <span class="tag">Procedural</span>
+                                <span class="tag">Single Player</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Game Card 3 
+                <article class="game-card reveal">
+                    <div class="card-image">
+                        <div class="placeholder-image game-img-3">
+                            <div class="img-overlay"></div>
+                            <span class="coming-soon">Concepto</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="game-genre">Puzzle / Mystery</span>
+                        <h3 class="game-title"></h3>
+                        <p class="game-desc">Resuelve crímenes en una ciudad art deco donde las pistas son tan esquivas como la verdad.</p>
+                        <div class="game-tags">
+                            <span class="tag">Investigación</span>
+                            <span class="tag">Atmósfera</span>
+                        </div>
+                    </div>
+                </article>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">// CONTACTO</span>
+                <h2 class="section-title">Hablemos del <span class="gradient-text">Futuro</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p class="contact-text">
+                        ¿Tienes una idea, propuesta de colaboración o simplemente quieres saludar?
+                        Nos encantaría saber de ti.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/denoir.games?igsh=MXM0dWJ1M2xvMDJuaA==" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <!--<a href="#" class="social-link" aria-label="Github">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Itch.io">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3.13 1.338C2.08 1.96 1.023 3.17.516 4.027c-.507.856-.507 1.374-.507 2.064v.71c0 1.203.506 2.33 1.352 3.07.338.297.71.508 1.182.678-.084.085-.169.204-.254.339-.422.66-.676 1.626-.676 2.607 0 2.012.845 3.466 2.014 3.89l-.338.508c-.169.254-.254.508-.254.762 0 .93.71 1.946 2.268 2.454 1.134.355 2.775.508 4.723.508 1.948 0 3.59-.153 4.723-.508 1.559-.508 2.268-1.524 2.268-2.454 0-.254-.085-.508-.254-.762l-.338-.508c1.169-.424 2.014-1.878 2.014-3.89 0-.981-.254-1.948-.676-2.607-.085-.135-.17-.254-.254-.339.472-.17.844-.381 1.182-.678.846-.74 1.352-1.867 1.352-3.07v-.71c0-.69 0-1.208-.507-2.064-.507-.857-1.565-2.067-2.615-2.69C15.696.72 13.846.466 12 .466c-1.846 0-3.696.252-4.87.872zM12 2.034c1.777 0 3.488.236 4.377.71.635.339 1.437 1.115 1.944 1.945.338.56.338.929.338 1.367v.71c0 .846-.338 1.523-.846 1.946-.338.296-.803.464-1.285.548-.142-.169-.338-.338-.563-.464-1.016-.571-2.326-.634-3.965-.634s-2.95.063-3.965.634c-.225.126-.421.296-.563.464-.482-.084-.947-.252-1.285-.548-.508-.423-.846-1.1-.846-1.946v-.71c0-.438 0-.807.338-1.367.507-.83 1.31-1.606 1.944-1.945.89-.474 2.6-.71 4.377-.71zm0 7.016c1.565 0 2.756.085 3.504.508.929.528.929 1.353.929 2.014 0 1.1-.422 2.05-.929 2.368-.507.296-1.353.508-3.504.508-2.151 0-2.997-.212-3.504-.508-.507-.318-.929-1.268-.929-2.368 0-.661 0-1.486.929-2.014.748-.423 1.94-.508 3.504-.508zm-6.422 7.27c.254.423.507.847.507 1.185 0 .169-.085.423-.507.549-.507.169-1.691.296-3.22.296-.507 0-.929-.042-1.351-.084l.76-1.143c.169-.254.254-.508.254-.762 0-.127-.015-.24-.044-.346 1.233.28 2.705.376 3.6.305zm8.845 0c.9.07 2.368-.024 3.6-.305-.029.106-.044.22-.044.346 0 .254.085.508.254.762l.76 1.143c-.422.042-.844.084-1.351.084-1.529 0-2.713-.127-3.22-.296-.422-.126-.507-.38-.507-.55 0-.337.253-.761.507-1.184zm-2.423.718c1.65 0 2.565.17 3.058.34.168.084.295.168.38.252l.14.211c-.563.11-1.55.21-3.578.21-2.028 0-3.015-.1-3.579-.21l.14-.211c.085-.084.212-.168.38-.253.494-.169 1.409-.339 3.059-.339z"/>
+                            </svg>
+                        </a>-->
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Nombre</label>
+                        <span class="input-highlight"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                        <span class="input-highlight"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Mensaje</label>
+                        <span class="input-highlight"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Enviar Mensaje</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="iconDicebLACK.svg" alt="Dé Noir Games" class="footer-dice">
+                <span class="footer-brand">DÉ NOIR GAMES</span>
+            </div>
+            <p class="footer-tagline">Creando mundos con personalidad propia.</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">
+                © 2025 Dé Noir Games. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
